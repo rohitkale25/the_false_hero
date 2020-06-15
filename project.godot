@@ -13,9 +13,21 @@ _global_script_classes=[ {
 "class": "Actor",
 "language": "GDScript",
 "path": "res://source/Actor.gd"
+}, {
+"base": "Control",
+"class": "DialogueBox",
+"language": "GDScript",
+"path": "res://DialogueBox.gd"
+}, {
+"base": "Node",
+"class": "DialoguePlayer",
+"language": "GDScript",
+"path": "res://Dialogue/DialoguePlayer.gd"
 } ]
 _global_script_class_icons={
-"Actor": ""
+"Actor": "",
+"DialogueBox": "",
+"DialoguePlayer": ""
 }
 
 [application]
@@ -23,6 +35,10 @@ _global_script_class_icons={
 config/name="game_2"
 run/main_scene="res://source/LevelTemplate.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+DialogueDatabase="*res://Dialogue/DialogueDatabase.gd"
 
 [input]
 
